@@ -18,12 +18,17 @@ app.engine('hbs', handlebars.engine({extname: '.hbs'}));
 app.set('view engine', 'hbs');
 app.set('views',path.join(__dirname, 'resources/views'));
 
+// req chứa yêu cầu gửi lên từ client, res chứa phản hồi từ server đến client
 app.get('/', (req, res) => {
     res.render('home');
 });
 
 app.get('/news', (req, res) => {
     res.render('news');
+});
+
+app.get('/search', (req, res) => {
+    res.render('search');
 });
 
 
