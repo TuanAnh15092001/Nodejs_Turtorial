@@ -6,9 +6,8 @@ class SiteController {
     }
     search(req, res) {
         res.render('search');
-
     }
-};
+}
 
 //export de su dung o file khac
 module.exports = new SiteController();
